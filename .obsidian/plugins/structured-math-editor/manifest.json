@@ -1,0 +1,9 @@
+{
+  "id": "structured-math-editor",
+  "name": "Structured Math Editor",
+  "version": "0.1.0",
+  "minAppVersion": "1.0.0",
+  "description": "A Mathcha-inspired structural math composer for fast nested LaTeX editing in Obsidian.",
+  "author": "OpenAI Codex",
+  "isDesktopOnly": false
+}

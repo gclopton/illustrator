@@ -1,0 +1,261 @@
+.sme-modal .modal {
+  width: min(1180px, 94vw);
+  max-width: 1180px;
+}
+
+.sme-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 70vh;
+}
+
+.sme-toolbar,
+.sme-actions,
+.sme-segmented,
+.sme-grid-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sme-toolbar {
+  justify-content: space-between;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 10px;
+}
+
+.sme-toolbar button,
+.sme-template,
+.sme-grid-controls button {
+  border-radius: 6px;
+}
+
+.sme-active {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.sme-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 14px;
+  min-height: 360px;
+}
+
+.sme-editor-panel,
+.sme-side,
+.sme-output {
+  min-width: 0;
+}
+
+.sme-math-mode {
+  min-height: 300px;
+  padding: 18px;
+  border: 1px solid var(--background-modifier-border);
+  background: color-mix(in srgb, var(--background-secondary) 72%, var(--background-primary));
+  overflow: auto;
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.sme-helper {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+.sme-side {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sme-palette,
+.sme-inspector,
+.sme-output {
+  border: 1px solid var(--background-modifier-border);
+  padding: 10px;
+  background: var(--background-secondary);
+}
+
+.sme-palette label,
+.sme-inspector label,
+.sme-output label {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.sme-search {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.sme-recent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.sme-recent > span {
+  flex-basis: 100%;
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.sme-template-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 320px;
+  overflow: auto;
+}
+
+.sme-template {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 7px 9px;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+}
+
+.sme-template-active {
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 1px var(--interactive-accent);
+}
+
+.sme-template-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.sme-template-meta,
+.sme-shortcut,
+.sme-inspector-value {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.sme-slot {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 24px;
+  min-height: 24px;
+  padding: 2px 4px;
+  margin: 1px;
+  border: 1px dashed transparent;
+  vertical-align: middle;
+}
+
+.sme-slot-active {
+  background: rgba(73, 157, 118, 0.13);
+  border-color: rgb(73, 157, 118);
+}
+
+.sme-placeholder {
+  color: var(--text-faint);
+  font-size: 0.78rem;
+}
+
+.sme-text-node {
+  min-width: 10px;
+  padding: 0 2px;
+  white-space: pre;
+  outline: none;
+}
+
+.sme-text-node:focus {
+  background: var(--background-primary);
+  box-shadow: 0 0 0 1px var(--interactive-accent);
+}
+
+.sme-node {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px;
+  margin: 1px;
+  border: 1px solid transparent;
+  vertical-align: middle;
+}
+
+.sme-node-selected {
+  border-color: var(--interactive-accent);
+  background: color-mix(in srgb, var(--interactive-accent) 10%, transparent);
+}
+
+.sme-frac {
+  display: inline-grid;
+  grid-template-rows: auto 1px auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.sme-frac-line {
+  display: block;
+  width: 100%;
+  min-width: 36px;
+  border-top: 1px solid var(--text-normal);
+}
+
+.sme-symbol,
+.sme-script {
+  color: var(--text-muted);
+}
+
+.sme-big-symbol {
+  font-size: 1.8em;
+  line-height: 1;
+}
+
+.sme-bracket {
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+.sme-grid {
+  border-collapse: collapse;
+  margin: 2px 6px;
+}
+
+.sme-grid td {
+  border: 1px solid var(--background-modifier-border);
+  padding: 5px 7px;
+  min-width: 46px;
+  text-align: center;
+}
+
+.sme-latex-output {
+  width: 100%;
+  min-height: 92px;
+  font-family: var(--font-monospace);
+  resize: vertical;
+}
+
+.sme-preview {
+  min-height: 54px;
+  margin-top: 10px;
+  padding: 10px;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+}
+
+@media (max-width: 900px) {
+  .sme-main {
+    grid-template-columns: 1fr;
+  }
+
+  .sme-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
