@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "pluginId": "structured-math-editor",
+  "sourceCommit": "c499e3c4de9b2fbe3989d48d71e24af8204b199b",
+  "files": {
+    "main.js": "b524259ace5bbc9344548884bb064fd229f6b92da0c42b3b692c59c30eb973bd",
+    "manifest.json": "f0630975adc4ca222740a2dbbe53650f72588fadc1143d4e93919e3ba0e8412c",
+    "styles.css": "a8ea18d2b37504441a8e0fb9a2a40e4d718786b745b547a35749948ee0a0871b"
+  },
+  "receiverCompatibility": {
+    "runtimeOnlyFrom": [
+      "0.1.0"
+    ],
+    "requiredMigrations": []
+  }
+}
